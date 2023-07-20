@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.card-img {
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 5px 0px 50px 10px hsl(240, 9%, 2%);
+    border-radius: 15px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    position: relative;
+}
+
+img {
+    opacity: 1;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.view-icon {
+    position: absolute;
+    margin-left: 1px;
+    width: 80%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.view-icon:hover {
+    opacity: 0.8;
+    transition: .2s;
+    cursor: pointer;
+}
+
+h4 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+h4:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.mid-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.value {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    font-size: 15px;
+}
+
+.day {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    font-size: 15px;
+}
+
+svg {
+    margin-right: 5px;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.bottom {
+    display: flex;
+    margin: 5px 0 10px;
+}
+
+.bottom img {
+    width: 30px;
+    border: 1px solid hsl(0, 3%, 79%);
+    border-radius: 50%;
+}
+
+.bottom p {
+    margin: 20px 10px 10px 20px;
+}
+
+.bottom p span {
+    color: hsla(0, 33%, 96%, 0.824);
+}
+
+.bottom p span:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Footer - link */
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    color: rgba(248, 248, 255, 0.598);
+}
+
+.attribution a {
+    color: hsl(117, 90%, 27%);
+    text-decoration: none;
+}
+
+/* Laptop */
+
+
+@media screen and (max-width:1440px) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .card-img {
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 5px 0px 50px 10px hsl(240, 9%, 2%);
+        border-radius: 15px;
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    img {
+        opacity: 1;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .view-icon {
+        position: absolute;
+        margin-left: 1px;
+        width: 82%;
+        background-color: hsl(178, 100%, 50%);
+        opacity: 0;
+    }
+}
+
+/* Tablet Point of View - Media Queries  */
+
+@media screen and (max-width:768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .card-img {
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 5px 0px 50px 10px hsl(240, 9%, 2%);
+        border-radius: 15px;
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    img {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .view-icon {
+        position: absolute;
+        margin-left: 1px;
+        width: 86%;
+        background-color: hsl(178, 100%, 50%);
+        opacity: 0;
+    }
+
+    .view-icon:hover {
+        opacity: 0.8;
+        transition: .2s;
+        cursor: pointer;
+    }
+}
+
+/* Mobile View - Media Quries */
+@media screen and (max-width:425px) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .card-img {
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 5px 0px 50px 10px hsl(240, 9%, 2%);
+        border-radius: 15px;
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    img {
+        opacity: 1;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .view-icon {
+        display: none;
+    }
+
+    /* Footer - link */
+    .attribution {
+        display: none;
+    }
+
+}
